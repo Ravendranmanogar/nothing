@@ -1,3 +1,5 @@
+
+import 'package:flutter/services.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 enum EnvTypeEnum{dev,prod}
@@ -6,6 +8,7 @@ class EnvVariable{
   EnvVariable._();
 
   static final EnvVariable instance=EnvVariable._();
+
 
   String _envType='';
 
